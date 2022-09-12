@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <b><p>print the string  key and value use forin loop</p></b>
+        <p id="demo"></p>
+    </body>
+
+    <script>
+
+        var arr={name:"aman",surnm:"dighe",age:26}
+
+        let txt=""
+
+        for(let i in arr)
+        {
+            txt += arr[i]+" "
+        }
+
+        document.getElementById('demo').innerHTML=txt
+
+
+    </script>
+</html>

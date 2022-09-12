@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <b><p>show the nexted array and object value</p></b>
+    <p id="demo"></p>
+  </body>
+
+  <script>
+
+    var arr=[
+            {
+              name:'markand',
+              age:26,
+              phone:88271,
+              alt:[{surname:'dighe',address:'indore'}]
+            },
+
+            {
+              name:'aayush',
+              age:27,
+              phone:86026,
+              alt:[{surname:'sharma',address:'bhopal'}]
+            },
+
+            {
+              name:'divyansh',
+              age:33,
+              phone:911167,
+              alt:[{surname:'yadav',address:'puna'}]
+            },
+
+            {
+              name:'shubham',
+              age:33,
+              phone:4589,
+              alt:[{surname:'sharma',address:'indore'}]
+            }
+
+
+          ]
+
+ document.write(JSON.stringify(arr))
+
+  </script>
+</html>

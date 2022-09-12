@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <b><p>nested array method use always two bracket to seprate the keys and value</p></b>
+ 
+        <p id="demo"></p>   
+    </body>
+
+    <script>
+
+    var arr=[['name','markand','age',26,'phone',88271,
+    ['name','aman','age',28,'phone',91795,
+    ['name','aayush','age',32,'phone',91795]]]] 
+
+        let txt=""
+
+        for(let i in arr)
+        {
+            txt+= arr[i] + " "
+        }
+
+        document.getElementById('demo').innerHTML=txt
+
+
+
+
+    </script>
+</html>

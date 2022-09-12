@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<body>
+    <b><p>find the maximum and minimum value of array</p></b>
+</body>
+
+
+<script>
+
+    var arr=[11,12,13,14,5,6,7,8,99,10]
+var max=0,min=0
+
+    for(let i in arr)
+    {
+        if(arr[i]>max)
+        {
+        max=arr[i]
+        }    
+    }
+    document.write("min num=",max+"<br>")
+    
+
+    for(let i in arr)
+    {
+        if(arr[i]<max)
+        {
+            max=arr[i]
+        }
+    }
+    
+
+    document.write("min num=",max)
+
+
+
+</script>

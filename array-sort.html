@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<body>
+    <b><p>array sort method set the value original position</p></b>
+</body>
+
+
+<script>
+
+var a=[12,15,17,19,11,13,16,20,14,18]
+
+        for(let j in a)
+        {
+            for(let i in a)
+            {
+                if(a[i]>a[j])
+                {
+                    let temp=a[i]
+                        a[i]=a[j]
+                        a[j]=temp
+                }
+            }
+        }
+
+            document.write(a)
+
+
+
+
+
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <b><p>multiple old object replace in new objects</p></b>
+    </body>
+
+
+        <script>
+
+    var a=[{"name":"aman","age":24,"phone":8827},{"name":"rahul","age":30,"phone":91167}]
+
+    var b=[{"name":"markand","age":25,"phone":84783},{"name":"divyansh","age":27,"phone":86026}]
+
+
+            let replace=(a,b)=>{
+
+                let key=Object.values(b)
+
+                let res=[{}]
+
+                for(let i in a)
+                {
+                    res[a[i]]=b[key[i]]
+
+                    b[a[i]]=b[key[i]]
+
+                    delete b[key[i]]
+                }
+            }
+            replace(a,b)
+            document.write(JSON.stringify(b))
+        
+        </script>
+</html>

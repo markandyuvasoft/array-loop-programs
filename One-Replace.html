@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<body>
+   <b><p>One array object replace to another object</p></b>
+</body>
+<script>
+
+   var a=[{"name":"aman","age":24,"place":"bhopal"}]
+
+   var b={"name":"markand","age":25,"place":"indore"}
+
+   let replace=(a,b)=>{
+
+       let key=Object.values(b)
+
+       let res=[{}]
+   
+       for(let i in a)
+       {
+           res[a[i]]= b[key[i]]
+
+           b[a[i]]= b[key[i]]
+
+           delete b [key[i]]
+       }
+   
+   }
+   replace(a,b)
+
+   document.write(JSON.stringify(b))
+
+</script>
+
+
+
+<!-- const arr = [{'name': 'aman', 'age': 24, 'place': 'indore'},{'name': 'raj', 'age': 24, 'place': 'indore'}];
+
+const obj = [{'name': 'markand', 'age': 24, 'place': 'indore'},{'name': 'markand1', 'age': 24, 'place': 'indore'}]; -->
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <b><p>show the nested array values</p></b>
+        <p id="demo"></p>
+    </body>
+
+    <script>
+
+var arr=[['name','markand','age',26,['name','divyansh','age','28'],
+        'email','markand@gmail.com','phone',8827184785,['address',617]]]
+        let txt=" "
+
+        for(let i in arr)
+        {
+            txt+=arr[i]
+        }
+
+        document.getElementById('demo').innerHTML=txt
+
+
+
+    </script>
+</html>
